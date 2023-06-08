@@ -1,5 +1,5 @@
 #[derive(Display)]
-enum Gradings {
+enum Grading {
     Unclassified,
     Unsatisfactory,
     Marginal,
@@ -10,7 +10,7 @@ enum Gradings {
     Excellent,
 }
 
-impl Gradings {
+impl Grading {
     /// Reminder: please convert your argument to uppercase
     /// before passing to this function.
     fn from_indicator(indicator: &str) -> Option<Self> {
@@ -41,12 +41,13 @@ impl Gradings {
     }
 }
 
-enum CSDGradings {
+#[derive(Display)]
+enum CSDGrading {
     Unattained,
     Attained,
 }
 
-impl CSDGradings {
+impl CSDGrading {
     /// Reminder: please convert your argument to uppercase
     /// before passing to this function.
     fn from_indicator(indicator: &str) -> Option<Self> {

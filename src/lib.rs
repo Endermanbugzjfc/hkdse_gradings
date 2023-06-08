@@ -1,3 +1,6 @@
+mod category_a;
+mod category_b;
+
 pub fn add(left: usize, right: usize) -> usize {
     left + right
 }
